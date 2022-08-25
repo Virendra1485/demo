@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>{{form.first_name.label}}</td>
+            <td>{{form.first_name}}</td>
+        </tr>
+        <tr>
+            <td>{{form.last_name.label}}</td>
+            <td>{{form.last_name}}</td>
+        </tr>
+        <tr>
+            <td>{{form.email.label}}</td>
+            <td>{{form.email}}</td>
+        </tr>
+        <tr>
+            <td>{{form.username.label}}</td>
+            <td>{{form.username}}</td>
+        </tr>
+        <var><tr>
+            <td>{{form.password.label}}</td>
+            <td>{{form.password}}</td>
+        </tr>
+        <tr>
+            <td>{{form.address.label}}</td>
+            <td>{{form.address}}</td>
+        </tr>
+        <tr>
+            <td>{{form.city.label}}</td>
+            <td>{{form.city}}</td>
+        </tr>
+        <tr>
+            <td>{{form.gender.label}}</td>
+            <td>{{form.gender}}</td>
+        </tr>
+        <tr>
+            <td>{{form.phone_no.label}}</td>
+            <td>{{form.phone_no}}</td>
+        </tr>
+        <tr>
+            <td>{{form.pincode.label}}</td>
+            <td>{{form.pincode}}</td>
+        </tr>
+    </table>
+    <input type="submit" value="Register">
+    </form>
+</body>
+</html>
