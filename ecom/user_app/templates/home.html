@@ -13,42 +13,57 @@
         <tr>
             <td>{{form.first_name.label}}</td>
             <td>{{form.first_name}}</td>
+            <td>{{form.errors.first_name}}</td>
         </tr>
         <tr>
             <td>{{form.last_name.label}}</td>
             <td>{{form.last_name}}</td>
+            <td>{{form.errors.last_name}}</td>
         </tr>
         <tr>
             <td>{{form.email.label}}</td>
             <td>{{form.email}}</td>
+            <td>{{form.errors.email}}</td>
         </tr>
         <tr>
             <td>{{form.username.label}}</td>
             <td>{{form.username}}</td>
+            <td>{{form.errors.username}}</td>
         </tr>
-        <var><tr>
-            <td>{{form.password.label}}</td>
-            <td>{{form.password}}</td>
+        <tr>
+            <td>{{form.password1.label}}</td>
+            <td>{{form.password1}}</td>
+            <td>{{form.errors.password1}}</td>
+        </tr>
+        <tr>
+            <td>{{form.password2.label}}</td>
+            <td>{{form.password2}}</td>
+            <td>{{form.errors.password2}}</td>
         </tr>
         <tr>
             <td>{{form.address.label}}</td>
             <td>{{form.address}}</td>
+            <td>{{form.errors.address}}</td>
         </tr>
         <tr>
             <td>{{form.city.label}}</td>
             <td>{{form.city}}</td>
+            <td>{{form.errors.city}}</td>
         </tr>
         <tr>
             <td>{{form.gender.label}}</td>
             <td>{{form.gender}}</td>
+            <td>{{form.errors.gender}}</td>
         </tr>
         <tr>
             <td>{{form.phone_no.label}}</td>
             <td>{{form.phone_no}}</td>
+            <td>{{form.errors.phone_no}}</td>
         </tr>
         <tr>
             <td>{{form.pincode.label}}</td>
             <td>{{form.pincode}}</td>
+            <td>{{form.errors.pincode}}</td>
         </tr>
     </table>
     <input type="submit" value="Register">
